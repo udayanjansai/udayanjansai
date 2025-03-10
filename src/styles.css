@@ -1,0 +1,105 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Resume Sections Layout */
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Form and Preview Panels */
+.resume-form, .resume-preview {
+    flex: 1;
+    min-width: 45%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* AI Generate Button */
+.ai-button {
+    background: #007bff;
+}
+
+.ai-button:hover {
+    background: #0056b3;
+}
+
+/* Download PDF Button */
+.download-button {
+    background: #28a745;
+}
+
+.download-button:hover {
+    background: #1e7e34;
+}
+
+/* Form Labels */
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Resume Preview */
+.resume-preview p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .resume-form, .resume-preview {
+        min-width: 100%;
+    }
+}
